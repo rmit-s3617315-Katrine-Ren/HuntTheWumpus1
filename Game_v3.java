@@ -63,12 +63,12 @@ public class Game {
 				if(board[i][j] == null){
 					board[i][j] = new ClearGround();
 					/*Place Player*/
-					if(position == 0){
-						player[X] = i;
+					if(position == 0){ // when position decrement reach 0, the game will
+						player[X] = i; // replace player with ClearGound
 						player[Y] = j;
-						position = 16;
-					}else{
-						position --;
+						position = 16; // and initilze 16 to position and make it never 
+					}else{                //meet the if condition"(position ==0 )" till the end of loop
+						position --; //position will decrement with loop until it reach 0
 					}
 				}
 			
